@@ -51,6 +51,47 @@ export default function Footer() {
 		)
 	});
 
+	const logosData = [
+		{
+			icon: useBaseUrl('img/partner/Filecoin-logo.png'),
+			label: 'Filecoin',
+			link: '',
+		},
+		{
+			icon: useBaseUrl('img/partner/IPFS-logo.png'),
+			label: 'IPFS',
+			link: '',
+		},
+		{
+			icon: useBaseUrl('img/partner/PL-logo.png'),
+			label: 'Protocol Labs',
+			link: '',
+		},
+		{
+			icon: useBaseUrl('img/partner/Titan-logo.png'),
+			label: 'Titan Network',
+			link: '',
+		},
+	]
+
+	const logoItems = logosData.map((item,index) => {
+		const {
+			icon,
+			label,
+			link,
+		} = item
+
+		return (
+			<div className={`${component}__item`} key={index}>
+				<a className={`${component}__link`} href={link} target="_blank" rel="noopener noreferrer" onClick={e => e.preventDefault()}>
+					<div className={`${component}__icon`}>
+						<img alt={label} src={icon} />
+					</div>
+				</a>
+			</div>
+		)
+	})
+
 	return (
 		<div className={component}>
 			<Container
@@ -60,10 +101,11 @@ export default function Footer() {
 			>
 				<Heading
 					componentClass={component}
-					title={'Start exploring'}
+					title={'合作伙伴'}
 				/>
 				<div className={`${component}__content`}>
-					{items}
+						{/*{items}*/}
+					{logoItems}
 				</div>
 			</Container>
 		</div>

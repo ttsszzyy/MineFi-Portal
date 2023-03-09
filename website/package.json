@@ -25,7 +25,7 @@
 	},
 	"scripts": {
 		"docusaurus": "docusaurus",
-		"start": "docusaurus start",
+		"start": "docusaurus start --host 0.0.0.0 --port 8788",
 		"build": "docusaurus build",
 		"deploy": "docusaurus deploy",
 		"serve": "docusaurus serve",
@@ -37,6 +37,7 @@
 		"@eightshift/frontend-libs": "^6.0.2",
 		"docusaurus-plugin-sass": "^0.2.2",
 		"react": "^17.0.2",
+		"react-count-to": "^0.12.0",
 		"react-dom": "^17.0.2",
 		"react-scripts": "^5.0.0"
 	},

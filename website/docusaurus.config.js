@@ -3,7 +3,7 @@ module.exports = {
 	tagline: 'All the tools you need to start building a modern WordPress project, using all the latest front end development tools.',
 	url: 'https://eightshift.com',
 	baseUrl: '/',
-	favicon: 'img/favicon.png',
+	favicon: 'img/favicon.ico',
 	organizationName: 'infinum',
 	projectName: 'eightshift-docs',
 	staticDirectories: ['static'],
@@ -16,58 +16,74 @@ module.exports = {
 	],
 	themeConfig: {
 		navbar: {
+			hideOnScroll: true,
 			logo: {
-				alt: 'Eightshift Development kit Logo',
-				src: 'img/eightshift-dev-kit-logo.svg',
+				alt: 'New Web Group Logo',
+				src: '/img/logo.png',
 			},
 			items: [
-				{
-					to: '/get-started',
-					activeBasePath: 'pages',
-					label: 'Get Started',
-					position: 'right',
-				},
-				{
-					to: 'docs/welcome',
-					activeBasePath: 'welcome',
-					label: 'Docs',
-					position: 'right',
-				},
-				{
-					to: '/blog',
-					activeBasePath: 'blog',
-					label: 'Blog',
-					position: 'right',
-				},
-				{
-					to: '/storybook/',
-					activeBasePath: 'storybook',
-					label: 'Storybook',
-					position: 'right',
-				},
-				{
-					to: '/sass',
-					activeBasePath: 'sass',
-					label: 'Sass',
-					position: 'right',
-				},
-				{
-					to: '/showcase',
-					activeBasePath: 'showcase',
-					label: 'Showcase',
-					position: 'right',
-				},
+				// {
+				// 	to: '/',
+				// 	activeBasePath: 'pages',
+				// 	label: '首页',
+				// 	position: 'right',
+				// },
+				// {
+				// 	to: 'docs/welcome',
+				// 	activeBasePath: 'welcome',
+				// 	label: '文档',
+				// 	position: 'right',
+				// },
+				// {
+				// 	type: 'html',
+				// 	position: 'right',
+				// 	value: '<img alt="" onclick="console.log(123)" style="cursor: pointer;" src="/img/wallet.svg"/>',
+				// },
+				// {
+				// 	to: '/blog',
+				// 	activeBasePath: 'blog',
+				// 	label: 'Blog',
+				// 	position: 'right',
+				// },
+				// {
+				// 	to: '/storybook/',
+				// 	activeBasePath: 'storybook',
+				// 	label: 'Storybook',
+				// 	position: 'right',
+				// },
+				// {
+				// 	to: '/sass',
+				// 	activeBasePath: 'sass',
+				// 	label: 'Sass',
+				// 	position: 'right',
+				// },
+				// {
+				// 	to: '/showcase',
+				// 	activeBasePath: 'showcase',
+				// 	label: 'Showcase',
+				// 	position: 'right',
+				// },
 			],
+		},
+		footer: {
+			logo: {
+				alt: 'New Web Group Logo',
+				src: '/img/logo.png',
+				href: '/',
+				width: 160,
+				height: 51,
+			},
+			copyright: `Copyright © ${new Date().getFullYear()} New Web Group.`,
 		},
 		prism: {
 			theme: require('prism-react-renderer/themes/dracula'),
 			additionalLanguages: ['php'],
 		},
-		algolia: {
-			appId: 'CWB1S6U3C4',
-			apiKey: 'cbae3fc769aee256328548eff1e91c1c',
-			indexName: 'infinum_eightshift',
-		},
+		// algolia: {
+		// 	appId: 'CWB1S6U3C4',
+		// 	apiKey: 'cbae3fc769aee256328548eff1e91c1c',
+		// 	indexName: 'infinum_eightshift',
+		// },
 		colorMode: {
 			disableSwitch: true
 		},
@@ -114,5 +130,5 @@ module.exports = {
 			'wordpress kit'
 		],
 		image: 'img-why-boilerplate@2x.png',
-	}
+	},
 };

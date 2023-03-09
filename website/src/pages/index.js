@@ -28,7 +28,7 @@ export default function Home() {
 			<Features />
 			<Panels />
 			<Footer />
-			<Foot />
+			{/*<Foot />*/}
 		</Layout>
 	);
 }
