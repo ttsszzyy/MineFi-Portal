@@ -26,7 +26,7 @@ export default function Home() {
 			<Why />
 			<GetStarted />
 			<Features />
-			<Panels />
+			{/*<Panels />*/}
 			<Footer />
 			{/*<Foot />*/}
 		</Layout>

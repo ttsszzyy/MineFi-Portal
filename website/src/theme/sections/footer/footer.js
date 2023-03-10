@@ -93,7 +93,7 @@ export default function Footer() {
 	})
 
 	return (
-		<div className={component}>
+		<div className={component} style={{borderTop:'2px solid white'}}>
 			<Container
 				componentClass={component}
 				size={'medium'}

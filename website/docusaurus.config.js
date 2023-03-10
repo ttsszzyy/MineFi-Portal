@@ -1,5 +1,5 @@
 module.exports = {
-	title: 'Eightshift Development kit',
+	title: 'MineFi',
 	tagline: 'All the tools you need to start building a modern WordPress project, using all the latest front end development tools.',
 	url: 'https://eightshift.com',
 	baseUrl: '/',
