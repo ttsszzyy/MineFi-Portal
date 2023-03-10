@@ -93,11 +93,11 @@ export default function Footer() {
 	})
 
 	return (
-		<div className={component} style={{borderTop:'2px solid white'}}>
+		<div className={component}>
 			<Container
 				componentClass={component}
 				size={'medium'}
-				bgColor={'light'}
+				// bgColor={'light'}
 			>
 				<Heading
 					componentClass={component}
