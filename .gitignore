@@ -16,3 +16,4 @@ website/i18n/*
 app/dist/
 app/yarn.lock
 app/node_modules
+app/.idea

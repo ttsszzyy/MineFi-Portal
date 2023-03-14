@@ -10,8 +10,6 @@ A documentation website for Eightshift open source projects.
 
 Visit:
 
-[https://eightshift.com/](https://eightshift.com/).
-
 To run docs locally:
 
 1. Clone this repo
