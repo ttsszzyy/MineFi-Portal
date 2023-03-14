@@ -22,18 +22,17 @@ module.exports = {
 				src: '/img/logo.png',
 			},
 			items: [
-				// {
-				// 	to: '/',
-				// 	activeBasePath: 'pages',
-				// 	label: '首页',
-				// 	position: 'right',
-				// },
-				// {
-				// 	to: 'docs/welcome',
-				// 	activeBasePath: 'welcome',
-				// 	label: '文档',
-				// 	position: 'right',
-				// },
+				{
+					to: '/',
+					activeBasePath: 'pages',
+					label: '首页',
+					position: 'left',
+				},
+				{
+						type: 'html',
+						position: 'left',
+						value: '<a style="color: #000;font-size: 16px" onmouseover="this.style.color=\'#E84E4E\'" onmouseleave="this.style.color=\'#000\'" href="https://app.minefi.io">市场</a>',
+				},
 				// {
 				// 	type: 'html',
 				// 	position: 'right',
